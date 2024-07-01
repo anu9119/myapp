@@ -8,15 +8,15 @@ export const menuConfig: MenuConfig = {
     mainNav: [
         {
             title: "About",
-            href: "/about",
+            href: "/#about",
         },
         {
             title: "Projects",
-            href: "/projects",
+            href: "/#projects",
         },
         {
             title: "Contact me",
-            href: "/contact",
+            href: "/#contact",
         }
     ],
 }
