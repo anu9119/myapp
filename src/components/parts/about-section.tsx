@@ -1,15 +1,8 @@
 import Carousel from "@/components/parts/carousel";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import IconCloud from "@/components/magicui/icon-cloud";
-import {
-  Timeline,
-  TimelineContent,
-  TimelineDot,
-  TimelineHeading,
-  TimelineItem,
-  TimelineLine,
-} from "../ui/timeline";
-import { TimelinePart } from "./timeline-part";
+
+import { TimelinePart } from "@/components/parts/timeline-part";
 
 export default function AboutSection() {
   const slugs = [
