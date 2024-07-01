@@ -1,6 +1,15 @@
 import Carousel from "@/components/parts/carousel";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import IconCloud from "@/components/magicui/icon-cloud";
+import {
+  Timeline,
+  TimelineContent,
+  TimelineDot,
+  TimelineHeading,
+  TimelineItem,
+  TimelineLine,
+} from "../ui/timeline";
+import { TimelinePart } from "./timeline-part";
 
 export default function AboutSection() {
   const slugs = [
@@ -48,21 +57,12 @@ export default function AboutSection() {
             </p>
             <Tabs defaultValue="education" className="w-full mt-2">
               <TabsList className="grid w-full grid-cols-4">
-                <TabsTrigger value="education">Education</TabsTrigger>
+                <TabsTrigger value="education">Experiences</TabsTrigger>
                 <TabsTrigger value="skills">Skills</TabsTrigger>
                 <TabsTrigger value="hobbies">Hobbies</TabsTrigger>
                 <TabsTrigger value="Athletic">Athletic career</TabsTrigger>
 
                 <TabsContent value="skills">
-                  {/* <ul className="my-6 ml-6 list-disc [&>li]:mt-2">
-                    <li>Python</li>
-                    <li>Postgres</li>
-                    <li>NestJs</li>
-                    <li>Algorithms</li>
-                    <li>Big data structures</li>
-                    <li>Prompt engineering</li>
-                    <li>LLMs ops</li>
-                  </ul> */}
                   <div className="min-w-max sm:text-center">
                     <div className="relative flex w-full max-w-[24rem] sm:max-w-[29rem] overflow-hidden rounded-lg px-20 pt-2 ">
                       <IconCloud iconSlugs={slugs} />
@@ -70,15 +70,8 @@ export default function AboutSection() {
                   </div>
                 </TabsContent>
                 <TabsContent value="education">
-                  <div className="min-w-max">
-                    <ul className="my-6 ml-6 list-disc [&>li]:mt-2 [&>li]:leading-7">
-                      <li>
-                        AI & databases master, university of burgundy, Dijon
-                      </li>
-                      <li>
-                        Mathematics degree, university via domitia, Perpignan
-                      </li>
-                    </ul>
+                  <div className="min-w-max mt-2">
+                    <TimelinePart></TimelinePart>
                   </div>
                 </TabsContent>
                 <TabsContent value="hobbies">
@@ -95,10 +88,9 @@ export default function AboutSection() {
                   <div className="min-w-max">
                     <p className="w-full text-left leading-7 [&:not(:first-child)]:mt-6">
                       As a former high-performance swimmer, I dedicated three
-                      remarkable years to the 
-                      high level sporting center of Font Romeu, proudly
-                      representing the colors of 
-                      Club Canet 66 Natation. My sporting highlights include:
+                      remarkable years to the high level sporting center of Font
+                      Romeu, proudly representing the colors of Club Canet 66
+                      Natation. My sporting highlights include:
                     </p>
                     <br />
                     <ul className="ml-6 list-disc [&>li]:mt-2">
