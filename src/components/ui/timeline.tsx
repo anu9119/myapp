@@ -75,6 +75,7 @@ const timelineDotVariants = cva(
         error:
           "border-destructive bg-destructive [&>*:not(.lucide-x)]:hidden [&>.lucide-x]:text-background",
         custom: "[&>*:not(:nth-child(4))]:hidden [&>*:nth-child(4)]:block",
+        working: "bg-yellow-500 [&>*:not(.lucide-loader)]:hidden [&>.lucide-loader]:animate-spin [&>.lucide-loader]:text-background",
       },
     },
     defaultVariants: {

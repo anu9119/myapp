@@ -34,23 +34,36 @@ export function TimelinePart() {
       </TimelineItem>
 
       <TimelineItem status="done">
-        <TimelineHeading side="right">Python developer</TimelineHeading>
+        <TimelineHeading side="right">
+          Python developer - Enedis{" "}
+        </TimelineHeading>
         <TimelineDot status="done" />
-        <TimelineLine done/>
+        <TimelineLine done />
         <TimelineContent className="text-wrap">
-            <p className="leading-7 text-balance">
-                TRACER project : for the purpose of detect, classify and identify
-                burried works, we have developed an reality augmented app using AI to
-                help enedis agents in there daily tasks. I was tasked with leading the
-                R&D efforts, annotating, training, and deploying the deep learning
-                model.
-            </p>
+          <p className="leading-7 text-balance">
+            TRACER project : for the purpose of detect, classify and identify
+            burried works, we have developed an reality augmented app using AI
+            to help enedis agents in there daily tasks. I was tasked with
+            leading the R&D efforts, annotating, training, and deploying the
+            deep learning model.
+          </p>
         </TimelineContent>
       </TimelineItem>
 
       <TimelineItem status="done">
-        <TimelineHeading side="right">Data engineer</TimelineHeading>
+        <TimelineHeading side="right">Data engineer - La Forge</TimelineHeading>
         <TimelineDot status="done" />
+        <TimelineLine done/>
+        <TimelineContent>
+          Thorough testing is essential to ensure the quality and reliability of
+          your software. Implement different testing methodologies, including
+          unit testing, integration testing, and user acceptance testing. This
+          helps identify and rectify any issues before deploying the software.
+        </TimelineContent>
+      </TimelineItem>
+      <TimelineItem status="done">
+        <TimelineHeading side="right">Lead data engineer - Credit Agricole Champagne Bourgogne</TimelineHeading>
+        <TimelineDot status="working" />
         <TimelineLine />
         <TimelineContent>
           Thorough testing is essential to ensure the quality and reliability of

@@ -3,7 +3,8 @@
 import { TypeAnimation } from "react-type-animation";
 import { motion } from "framer-motion";
 import React from "react";
-import { Button } from "../ui/button";
+import { Button } from "@/components/ui/button";
+import Link from "next/link";
 
 export function HeroSection() {
   return (
@@ -36,8 +37,8 @@ export function HeroSection() {
           </p>
           <p className="text-base sm:text-lg mb-6 lg:text-xl">
             I&apos;m Sacha, a dedicated data engineer on a mission to scale new
-            heights, both in the datas and heights peaks. By day, I'm helping La
-            Forge navigate the data currents. By weekends, you'll find me
+            heights, both in the datas and heights peaks. By day, I'm helping 
+             <Link href={"https://www.la-forge.ai/"} className="font-bold text-secondary-foreground hover:text-secondary-foreground/50 dark:text-secondary dark:hover:text-secondary/50"> La Forge </Link> navigate the data currents. By weekends, you'll find me
             conquering mountain peaks and exploring the world from a different
             perspective.
           </p>

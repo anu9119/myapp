@@ -1,7 +1,7 @@
 export const siteConfig = {
-  name: "portfolio-Sacha Choumiloff",
+  name: "Portfolio - Sacha Choumiloff",
   url: "https://dataelevation.dev",
-  ogImage: "https://ui.shadcn.com/logo.png",
+  ogImage: "https://localhost/logo.png",
   description:
     "Portfolio of Sacha Choumiloff, a data and AI engineer currently working at Laforge.",
   links: {
