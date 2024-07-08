@@ -8,17 +8,21 @@ import {
   CarouselPrevious,
 } from "@/components/ui/carousel";
 
-export default function Carousel() {  return (
-    <CarouselComponent className="w-full">
-      <CarouselContent>
-        {Array.from({ length: 5 }).map((_, index) => (
+const images: string[] = [
+  "/about/luneSaintveran.JPEG",
+  "/about/sharpatiNepalkhumbu.JPEG",
+  "/about/toiliessaintveran.JPEG",
+
+];
+
+export default function Carousel() {
+  return (
+    <CarouselComponent className="w-full h-full">
+      <CarouselContent className="h-[750px]">
+        {images.map((url, index) => (
           <CarouselItem key={index}>
-            <div className="p-1">
-              <Card>
-                <CardContent className="flex aspect-square items-center justify-center p-6">
-                  <span className="text-4xl font-semibold">{index + 1}</span>
-                </CardContent>
-              </Card>
+            <div className="w-full rounded overflow-hidden shadow-lg relative">
+              <img src={url} className="rounded object-cover" alt={url.split("/").at(-1)?.split(".")[0]}></img>
             </div>
           </CarouselItem>
         ))}
@@ -26,5 +30,5 @@ export default function Carousel() {  return (
       <CarouselPrevious />
       <CarouselNext />
     </CarouselComponent>
-  )
+  );
 }

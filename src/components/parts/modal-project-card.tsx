@@ -24,13 +24,13 @@ export const ModalProjectCard = (data: {
         <Separator className="mt-4 "></Separator>
       </div>
       <div>
-        <Carousel className="w-full max-w-xs">
+        <Carousel className="w-full h-full">
           <CarouselContent>
             {data.photos.map((url, index) => (
               <CarouselItem key={index}>
-                <div className="max-w-sm rounded overflow-hidden shadow-lg relative">
+                <div className="h-full w-full rounded overflow-hidden shadow-lg relative">
                 <img
-                    className="w-full"
+                    className="rounded h-full w-full object-cover"
                     src={url}
                     alt={index.toString()}
                 />
@@ -38,8 +38,7 @@ export const ModalProjectCard = (data: {
               </CarouselItem>
             ))}
           </CarouselContent>
-          <CarouselPrevious />
-          <CarouselNext />
+
         </Carousel>
       </div>
       <div className="mx-2">

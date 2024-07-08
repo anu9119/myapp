@@ -18,9 +18,10 @@ export function MainNav() {
                 <Icons.logo />
             </Link>
             <nav className="flex items-center gap-4 text-md lg:gap-6">
-                {menuConfig.mainNav.map((item) => (
+                {menuConfig.mainNav.map((item, index) => (
                     <Link
                         href={item.href as string}
+                        key={index}
                         className={cn(
                             "transition-colors hover:text-foreground/80",
                             pathname === item.href ? "text-foreground" : "text-foreground/60"

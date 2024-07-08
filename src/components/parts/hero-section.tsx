@@ -5,8 +5,40 @@ import { motion } from "framer-motion";
 import React from "react";
 import { Button } from "@/components/ui/button";
 import Link from "next/link";
+import { toast } from "@/components/ui/use-toast";
+import { sendGAEvent } from '@next/third-parties/google'
 
 export function HeroSection() {
+
+  const dlFile = async () => {
+    const response = await fetch('https://api.dataelevation.dev/api/dl/resume/EN')
+    if (response.ok) {
+      sendGAEvent({
+        event: 'dlCVSuccess',
+        value: 'success'
+      })
+      const blob = await response.blob()
+      const url = window.URL.createObjectURL(blob);
+      const a = document.createElement('a');
+      a.href = url;
+      a.download = 'CV Sacha Choumiloff.pdf';
+      document.body.appendChild(a);
+      a.click();
+      window.URL.revokeObjectURL(url);
+    } else {
+      sendGAEvent({
+        event: 'dlCVError',
+        value: 'error'
+      })
+      toast({
+        variant: "destructive",
+        title: "Download failed",
+        description: "Please try again later."
+      })
+    }
+  }
+
+
   return (
     <section>
       <div className="container mt-10">
@@ -44,8 +76,8 @@ export function HeroSection() {
           </p>
 
           <div className="flex flex-col space-y-4 items-center sm:space-x-4 sm:space-y-0 sm:flex-row">
-            <Button variant={"foreground"} className="w-48 py-2 px-4">Get in touch</Button>
-            <Button className="w-48 py-2 px-4">CV</Button>
+            <Button variant={"foreground"} className="w-48 py-2 px-4" ><Link href={"#contact"}>Get in touch</Link></Button>
+            <Button className="w-48 py-2 px-4" onClick={() => dlFile()}>CV</Button>
           </div>
         </motion.div>
       </div>

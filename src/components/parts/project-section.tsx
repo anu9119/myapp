@@ -15,7 +15,7 @@ const projects: ProjectItem[] = [
       "/projects/rti/rti3.PNG",
     ],
     tags: ["AI", "Data"],
-    techno: ["Python", "Pytorch", "Airflow", "docker"],
+    techno: ["Python", "Pytorch", "Airflow", "Docker"],
   },
   {
     name: "VL",
@@ -23,8 +23,8 @@ const projects: ProjectItem[] = [
     description:
       "Development of a data aggregation platform for measuring the socio-economic and environmental impacts of companies.",
     photos: ["/projects/vl/1.png", "/projects/vl/2.png", "/projects/vl/3.png"],
-    tags: ["Data","Development"],
-    techno: ["Python", "React", "Next", "docker"],
+    tags: ["Data", "Development"],
+    techno: ["Python", "React", "Next", "Docker"],
   },
   {
     name: "mieux",
@@ -32,38 +32,30 @@ const projects: ProjectItem[] = [
     description:
       "Development of a health platform using AI to monitor the health of beneficiaries in a personalized way.",
     photos: [
-      "/projects/mieux/mieux1.png",
-      "/projects/mieux/mieux2.png",
-      "/projects/mieux/mieux3.png",
-      "/projects/mieux/mieux4.png",
+      "/projects/mieux/mieux1.PNG",
+      "/projects/mieux/mieux2.PNG",
+      "/projects/mieux/mieux3.PNG",
+      "/projects/mieux/mieux4.PNG",
     ],
     tags: ["Data", "AI", "Development"],
-    techno: ["Java", "Spring", "nestJs", "docker"],
+    techno: ["Java", "Spring", "NestJs", "Docker"],
   },
   {
     name: "TRACER",
     title: "Tracer",
     description:
       "Project with the purpose of detect, classify and identify burried works, we have developed an reality augmented app using AI to help enedis agents in there daily tasks. I was tasked with leading the R&D efforts, annotating, training, and deploying the deep learning mode.",
-    photos: [
-      "/projects/tracer/1.png",
-      "/projects/tracer/2.png",
-      "/projects/tracer/3.png",
-    ],
-    techno: ["python", "docker", "pytorch", "k8s"],
+    photos: [],
+    techno: ["Python", "Docker", "Pytorch", "K8s"],
     tags: ["Data", "AI", "Image processing"],
   },
   {
     name: "Portfolio",
     title: "My Portfolio",
     description: "Building my online porfolio using nextjs aframework.",
-    photos: [
-      "/projects/portfolio/1.png",
-      "/projects/portfolio/2.png",
-      "/projects/portfolio/3.png",
-    ],
+    photos: [],
     tags: ["development"],
-    techno: ["nextjs", "docker", "typescript"],
+    techno: ["Nextjs", "Docker", "Typescript", "ShadcnUi"],
   },
   {
     name: "Trading Assistant",
@@ -72,25 +64,40 @@ const projects: ProjectItem[] = [
       "Assistant who helps to detect trading patterns and backtests trading strategies (based on more than 100 technical indicators) on crypto currencies.",
     photos: [],
     tags: ["development", "Data", "AI"],
-    techno: ["Python", "Java", "Spring", "docker"],
+    techno: ["Python", "Java", "Spring", "Docker"],
   },
   {
     name: "mediascopie",
     title: "Mediascopie",
     description:
-      "Measure public engagement with audiovisual content in real time by analyzing listeners' spontaneous reactions.",
-    photos: [],
+      "Measure public engagement with audiovisual content in real time by analyzing listeners spontaneous reactions.",
+    photos: [
+      "/projects/mediascopie/mediascopie1.PNG",
+      "/projects/mediascopie/mediascopie2.PNG",
+    ],
     tags: ["development", "Data"],
-    techno: ["Python", "Javascript", "redis", "docker"],
+    techno: ["Python", "Javascript", "Redis", "Docker"],
   },
   {
     name: "JVPDT",
     title: "JVPDT",
     description:
       "A platform that allows for the sharing and writing of historical articles.",
-    photos: [],
+    photos: ["/projects/jvpdt/jvpdt1.PNG"],
     tags: ["development"],
-    techno: ["typescript", "nextjs", "docker"],
+    techno: ["Typescript", "Nextjs", "Docker"],
+  },
+  {
+    name: "Wescreen",
+    title: "Wescreen",
+    description:
+      "Wescreen is a user-friendly software that enables users to upload insurance contracts in PDF format and to get a risk evaluation of their insurance policies.",
+    photos: [
+      "/projects/wescreen/wescreen1.PNG",
+      "/projects/wescreen/wescreen2.PNG",
+    ],
+    tags: ["development", "AI", "Document understanding"],
+    techno: ["Python", "Docker"],
   },
 ];
 

@@ -4,7 +4,7 @@ import { siteConfig } from "@/config/site";
 import { fontSans } from "@/lib/fonts";
 import { cn } from "@/lib/utils";
 import "@/styles/globals.css";
-
+import { GoogleAnalytics } from "@next/third-parties/google";
 import { Metadata, Viewport } from "next";
 
 export const metadata: Metadata = {
@@ -18,6 +18,10 @@ export const metadata: Metadata = {
     "Data engineer",
     "AI engineer",
     "Sacha Choumiloff",
+    "sacha",
+    "Sacha",
+    "Choumiloff",
+    "Choumiloff Sacha",
     "Sacha Choumiloff portfolio",
     "portfolio",
     "portfolio-Sacha Choumiloff",
@@ -30,6 +34,7 @@ export const metadata: Metadata = {
     "La forge AI",
     "La forge CACB",
     "Enedis",
+    "alpes",
     "alpes française",
     "mountains",
     "alpinisme",
@@ -105,14 +110,13 @@ export default function RootLayout({ children }: RootLayoutProps) {
             enableSystem
             disableTransitionOnChange
           >
-            <div vaul-drawer-wrapper="">
-              <div className="relative flex min-h-screen flex-col bg-background">
-                {children}
-              </div>
+            <div className="relative flex min-h-screen flex-col bg-background">
+              {children}
             </div>
             <Toaster />
           </ThemeProvider>
         </body>
+        <GoogleAnalytics gaId="G-248M3MV0RW" />
       </html>
     </>
   );
