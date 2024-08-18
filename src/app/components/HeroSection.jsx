@@ -16,24 +16,25 @@ const HeroSection = () => {
           className="col-span-8 place-self-center text-center sm:text-left justify-self-start"
         >
           <h1 className="text-white mb-4 text-4xl sm:text-5xl lg:text-8xl lg:leading-normal font-extrabold">
-            <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary-400 to-secondary-600">
+          <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-500 to-black">
               Hello, I&apos;m{" "}
             </span>
             <br></br>
             <TypeAnimation
               sequence={[
-                "Judy",
+                "Sathiska Gunarathna",
                 1000,
-                "Web Developer",
+                "Software Engineer",
                 1000,
-                "Mobile Developer",
+                "Full Stack Developer",
                 1000,
-                "UI/UX Designer",
+                "Combined Maths Tutor",
                 1000,
               ]}
               wrapper="span"
               speed={50}
               repeat={Infinity}
+              
             />
           </h1>
           <p className="text-[#ADB7BE] text-base sm:text-lg mb-6 lg:text-xl">
