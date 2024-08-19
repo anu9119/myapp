@@ -16,7 +16,7 @@ const HeroSection = () => {
           className="col-span-8 place-self-center text-center sm:text-left justify-self-start"
         >
           <h1 className="text-white mb-4 text-4xl sm:text-5xl lg:text-8xl lg:leading-normal font-extrabold">
-            <span className="text-transparent bg-clip-text bg-gradient-to-r from-green-500 to-black" style={{fontSize:"50px"}}>
+            <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-600" style={{fontSize:"50px",color:"bg-gradient-to-r from-blue-500"}}>
               Hello, I&apos;m{" "}
             </span><br/>
             <TypeAnimation
@@ -61,11 +61,12 @@ const HeroSection = () => {
         >
           <div className="rounded-full bg-[#181818] w-[250px] h-[250px] lg:w-[400px] lg:h-[400px] relative">
             <Image
-              src="/images/hero-image.png"
+              src="/images/projects/profile-pic.png"
               alt="hero image"
               className="absolute transform -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
-              width={300}
-              height={300}
+              width={350}
+              height={350}
+              style={{borderRadius:"100%"}}
             />
           </div>
         </motion.div>
