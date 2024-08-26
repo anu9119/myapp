@@ -2,20 +2,33 @@
 import React, { useTransition, useState } from "react";
 import Image from "next/image";
 import TabButton from "./TabButton";
+import styles from '../components/sections.module.css';
 
 const TAB_DATA = [
   {
     title: "Skills",
     id: "skills",
     content: (
-      <ul className="list-disc pl-2">
-        <li>Node.js</li>
-        <li>Express</li>
-        <li>MySQL</li>
-        <li>Sequelize</li>
-        <li>JavaScript</li>
+      <ul className="list-disc pl-3 grid grid-cols-3 gap-3">
         <li>React</li>
+        <li>NodeJs</li>
+        <li>MySQL</li>
+        <li>Nextjs</li>
+
+        <li>NestJs</li>
+        <li>MongoDB</li>
+        <li>Angular</li>
+        <li>SpringBoot</li>
+
+        <li>FireBase</li>
+        <li>Flutter</li>
+        <li>Sequelize</li>
+        <li>MsSQL</li>
+
+        <li>React Native</li>
+
       </ul>
+
     ),
   },
   {
@@ -23,19 +36,23 @@ const TAB_DATA = [
     id: "education",
     content: (
       <ul className="list-disc pl-2">
-        <li>Third Year Undergraduate Student</li>
-        <li>University of Moratuwa , SriLanka</li>
+        <li>Third-Year Undergraduate Student at the University of Moratuwa Faculty Of Information Technology </li><br/>
+
+        <li>Third-Year Undergraduate Student at the University of Moratuwa Faculty Of Information Technology </li>
+
+        
       </ul>
     ),
   },
   {
-    title: "Certifications",
-    id: "certifications",
+    title: "Programming Languages",
+    id: "Programming Languages",
     content: (
       <ul className="list-disc pl-2">
-        <li>React Beginners</li>
-        <li>Maching Learning Fundemental.</li>
-        <li>Flutter Cetificate</li>
+        <li>C</li>
+        <li>Java</li><br/>
+        <li>Python</li>
+        <li>Dart</li>
       </ul>
     ),
   },
@@ -54,16 +71,19 @@ const AboutSection = () => {
   return (
     <section className="text-white" id="about">
       <div className="md:grid md:grid-cols-2 gap-8 items-center py-8 px-4 xl:gap-16 sm:py-16 xl:px-16">
-        <Image src="/images/about-image.png" width={500} height={500} />
-        <div className="mt-4 md:mt-0 text-left flex flex-col h-full">
+        <div className={styles.about_image}>
+          <div className={styles.box}>
+          <Image src="/images/about-image.png" width={600} height={500} />
+          </div>
+        </div>
+        
+        <div className="mt-4 md:mt-0 text-left flex flex-col h-full ml-6">
           <h2 className="text-4xl font-bold text-white mb-4">About Me</h2>
-          <p className="text-base lg:text-lg">
-            I am a full stack web developer with a passion for creating
-            interactive and responsive web applications. I have experience
-            working with JavaScript, React, Redux, Node.js, Express, PostgreSQL,
-            Sequelize, HTML, CSS, and Git. I am a quick learner and I am always
-            looking to expand my knowledge and skill set. I am a team player and
-            I am excited to work with others to create amazing applications.
+          <p className="text-base">
+            A passionate , enthusiastic , and skilled undergraduate who is
+            dedicated to Working smart to achieve goals and is up for any
+            challenge.Furthermore,a responsible team player with solid and friendly
+            leadership qualities and a good team spirit.
           </p>
           <div className="flex flex-row justify-start mt-8">
             <TabButton
@@ -81,11 +101,11 @@ const AboutSection = () => {
               Education{" "}
             </TabButton>
             <TabButton
-              selectTab={() => handleTabChange("certifications")}
-              active={tab === "certifications"}
+              selectTab={() => handleTabChange("Programming Languages")}
+              active={tab === "Programming Languages"}
             >
               {" "}
-              Certifications{" "}
+              Programming Languages{" "}
             </TabButton>
           </div>
           <div className="mt-8">
