@@ -9,9 +9,11 @@ import { cn } from "@/lib/utils";
 import { Icons } from "./icons";
 import { menuConfig } from "@/config/menu";
 import { ScrollArea } from "@/components/ui/scroll-area";
+import { useTheme } from "next-themes";
 
 export function MobileNav() {
   const [open, setOpen] = React.useState(false);
+  const theme = useTheme();
 
   return (
     <Sheet open={open} onOpenChange={setOpen}>
@@ -58,7 +60,8 @@ export function MobileNav() {
           className="flex items-center"
           onOpenChange={setOpen}
         >
-          <Icons.logo  />
+                          {theme.resolvedTheme === "light" ? <Icons.logo_light /> :
+                <Icons.logo_dark />}
         </MobileLink>
         <ScrollArea className="my-4 h-[calc(100vh-8rem)] pb-10 pl-6">
             <div className="flex flex-col space-y-3">

@@ -55,10 +55,7 @@ export function TimelinePart() {
         <TimelineDot status="done" />
         <TimelineLine done/>
         <TimelineContent>
-          Thorough testing is essential to ensure the quality and reliability of
-          your software. Implement different testing methodologies, including
-          unit testing, integration testing, and user acceptance testing. This
-          helps identify and rectify any issues before deploying the software.
+        As a data engineer at La Forge, I was responsible for designing, developing, and implementing high-quality AI products. At the heart of this startup studio, I had the opportunity to explore various AI projects and applications, particularly in the fields of healthcare and industry.
         </TimelineContent>
       </TimelineItem>
       <TimelineItem status="done">
@@ -66,10 +63,6 @@ export function TimelinePart() {
         <TimelineDot status="working" />
         <TimelineLine />
         <TimelineContent>
-          Thorough testing is essential to ensure the quality and reliability of
-          your software. Implement different testing methodologies, including
-          unit testing, integration testing, and user acceptance testing. This
-          helps identify and rectify any issues before deploying the software.
         </TimelineContent>
       </TimelineItem>
     </Timeline>

@@ -3,8 +3,11 @@ import Image from "next/image";
 type IconProps = React.HTMLAttributes<SVGElement>;
 
 export const Icons = {
-  logo: () => (
-    <Image alt="logo" height={15} width={100} src="/logo.png" />
+  logo_dark: () => (
+    <Image alt="logo" height={15} width={100} src="/favicon_dark.png" />
+  ),
+  logo_light: () => (
+    <Image alt="logo" height={15} width={100} src="/favicon_light.png" />
   ),
   twitter: (props: IconProps) => (
     <svg

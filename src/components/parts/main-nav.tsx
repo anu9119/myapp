@@ -8,14 +8,16 @@ import { cn } from "@/lib/utils"
 import { Icons } from "@/components/parts/icons"
 import Link from "next/link"
 import { menuConfig } from "@/config/menu"
+import { useTheme } from "next-themes"
 
 export function MainNav() {
     const pathname = usePathname()
-
+    const theme = useTheme();
     return (
         <div className="mr-4 hidden md:flex">
             <Link href="/" className="mr-6 flex items-center space-x-2">
-                <Icons.logo />
+                {theme.resolvedTheme === "light" ? <Icons.logo_light /> :
+                <Icons.logo_dark />}
             </Link>
             <nav className="flex items-center gap-4 text-md lg:gap-6">
                 {menuConfig.mainNav.map((item, index) => (
